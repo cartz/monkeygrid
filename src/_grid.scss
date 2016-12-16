@@ -1,0 +1,62 @@
+// grid
+
+$width: 96%;
+$gutter: 4%;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: $breakpoint-small) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: $breakpoint-large) {
+    width: 85%;
+    max-width: 80rem;
+  }
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-viertel,
+.col-drittel,
+.col-halb,
+.col-ganz {
+  width: $width;
+}
+
+.col-viertel-sm { width: ($width / 4) - ($gutter * 9 / 12); }
+.col-drittel-sm { width: ($width / 3) - ($gutter * 8 / 12); }
+.col-halb-sm { width: ($width / 2) - ($gutter * 6 / 12); }
+.col-ganz-sm { width: $width; }
+
+@media only screen and (min-width: $breakpoint-med) {
+  .col-viertel { width: ($width / 4) - ($gutter * 9 / 12); }
+  .col-drittel { width: ($width / 3) - ($gutter * 8 / 12); }
+  .col-halb { width: ($width / 2) - ($gutter * 6 / 12); }
+  .col-ganz { width: $width; }
+
+  .hidden-sm {
+    display: block;
+  }
+}

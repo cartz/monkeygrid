@@ -18,7 +18,11 @@ Die Schulversion der monkeygrids ist unter: https://github.com/cartz/monkeygrid/
 
 
 ##Kontakt
-
 - www.mydarktime.de (Blog)
 - www.typingmonkey.de (Portfolio)
 - www.twitter.com/mydarktime
+
+##Lizenz
+Dieses Projekt steht unter der GNU General Public License v3.0. Ich bitte euch, sie zu beachten!
+
+Informationen zur Lizenz sind unter folgender URL zu finden: https://github.com/cartz/monkeygrid/blob/master/license.md

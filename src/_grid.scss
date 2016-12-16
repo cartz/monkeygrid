@@ -1,26 +1,32 @@
-// grid
+//  Grid
+
+//  An dieser Stelle machen wir die Einstellungen für unser Grid.
 
 $width: 96%;
 $gutter: 4%;
-$breakpoint-small: 33.75em; // 540px
-$breakpoint-med: 45em; // 720px
-$breakpoint-large: 60em; // 960px
+$breakpoint-klein: 33.75em; // 540px
+$breakpoint-mittel: 45em; // 720px
+$breakpoint-gross: 60em; // 960px
 
+//  An dieser Stelle definieren wir den container.
+//  Wir wollen nämlich nicht, dass die Internetseite 
+//  sich über die gesamte Breite des Fensters erstreckt.
 .container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 
-  @media only screen and (min-width: $breakpoint-small) {
+  @media only screen and (min-width: $breakpoint-klein) {
     width: 90%;
   }
 
-  @media only screen and (min-width: $breakpoint-large) {
-    width: 85%;
-    max-width: 80rem;
+  @media only screen and (min-width: $breakpoint-gross) {
+    width: 90%;
+    max-width: 100rem;
   }
 }
 
+//  An dieser Stelle definieren wir eine Zeile (row).
 .row {
   position: relative;
   width: 100%;
@@ -38,6 +44,14 @@ $breakpoint-large: 60em; // 960px
   clear: both;
 }
 
+//  An dieser Stelle definieren wir eine Zelle (col).
+//  In den Zellen befindet sich später unser Inhalt (Bilder, Texte,...)
+//  Wenn wir etwas auf einem kleinen Bildschirm verstecken wollen, dann fügen 
+//  wir die Angabe hidden-klein als class hinzu.
+//  wenn wir eine Zelle auch auf kleinen Bildschirmen in einer bestimmten Größe 
+//  haben wollen, dann fügen wir zum Beispiel col-viertel-klein als class hinzu.
+//  Beispiel:
+//    <div class="col-drittel col-vierte-klein"></div>
 .col-viertel,
 .col-drittel,
 .col-halb,
@@ -45,18 +59,22 @@ $breakpoint-large: 60em; // 960px
   width: $width;
 }
 
-.col-viertel-sm { width: ($width / 4) - ($gutter * 9 / 12); }
-.col-drittel-sm { width: ($width / 3) - ($gutter * 8 / 12); }
-.col-halb-sm { width: ($width / 2) - ($gutter * 6 / 12); }
-.col-ganz-sm { width: $width; }
-
-@media only screen and (min-width: $breakpoint-med) {
+@media only screen and (min-width: $breakpoint-mittel) {
   .col-viertel { width: ($width / 4) - ($gutter * 9 / 12); }
   .col-drittel { width: ($width / 3) - ($gutter * 8 / 12); }
   .col-halb { width: ($width / 2) - ($gutter * 6 / 12); }
   .col-ganz { width: $width; }
 
-  .hidden-sm {
+  .hidden-klein {
     display: block;
   }
 }
+
+.hidden-klein {
+  display: none;
+}
+
+.col-viertel-klein { width: ($width / 4) - ($gutter * 9 / 12); }
+.col-drittel-klein { width: ($width / 3) - ($gutter * 8 / 12); }
+.col-halb-klein { width: ($width / 2) - ($gutter * 6 / 12); }
+.col-ganz-klein { width: $width; }

@@ -1,7 +1,8 @@
 // Utility
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Clear a float with .clearfix
+// In dieser Datei kümmern wir uns um die Ausrichtung von Text.
+
+// Eine Ausrichtung bereinigen mit .clearfix
 .clearfix {
   &:after {
     clear: both;
@@ -10,7 +11,7 @@
   }
 }
 
-// Float either direction
+// Textausrichtungen festlegen
 .float-left {
   float: left;
 }

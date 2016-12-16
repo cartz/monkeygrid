@@ -64,14 +64,6 @@ $breakpoint-gross: 60em; // 960px
   .col-drittel { width: ($width / 3) - ($gutter * 8 / 12); }
   .col-halb { width: ($width / 2) - ($gutter * 6 / 12); }
   .col-ganz { width: $width; }
-
-  .hidden-klein {
-    display: block;
-  }
-}
-
-.hidden-klein {
-  display: none;
 }
 
 .col-viertel-klein { width: ($width / 4) - ($gutter * 9 / 12); }

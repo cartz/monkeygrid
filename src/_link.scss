@@ -3,11 +3,11 @@
 //	In dieser Datei bearbeiten wir das Aussehen von Links.
 
 a {
-  color: $color-primary;
+  color: $color-2;
   text-decoration: none;
 
   &:focus,
   &:hover {
-    color: $color-secondary;
+    color: darken($color-2, 10);
   }
 }

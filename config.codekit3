@@ -41,16 +41,16 @@
 		"cS": 0,
 		"eF": 1,
 		"eL": 1,
-		"eLB": 0,
+		"eLB": 1,
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/README.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
-		"pHT": 0,
+		"pHT": 1,
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
@@ -94,7 +94,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/src\/_color.scss": {
+	"\/src\/_colors.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -102,7 +102,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/src\/_color.css",
+		"oAP": "\/src\/_colors.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -146,6 +146,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/src\/_lists.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/_lists.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/src\/_typography.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -182,7 +195,7 @@
 		"oA": 0,
 		"oAP": "\/monkeygrid.css",
 		"oF": 2,
-		"oS": 3,
+		"oS": 0,
 		"uL": 1
 		}
 	},
@@ -1985,7 +1998,7 @@
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",

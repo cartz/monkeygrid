@@ -4,7 +4,8 @@
 //	wie wir es uns wünschen.
 
 blockquote {
-  border-left: 0.3rem solid #000fff;
+  border-left: 0.3rem solid;
+  border-color: $color-3;
   margin-left: 0;
   margin-right: 0;
   padding: 1rem 1.5rem;

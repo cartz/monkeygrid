@@ -15,7 +15,8 @@ blockquote {
   border-color: #8cc14c;
   margin-left: 0;
   margin-right: 0;
-  padding: 1rem 1.5rem; }
+  padding: 1rem 1.5rem;
+  font-style: oblique; }
   blockquote *:last-child {
     margin-bottom: 0; }
 

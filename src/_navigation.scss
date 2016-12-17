@@ -1,0 +1,72 @@
+//	Navigation
+
+//	Achtung: Die Navigation benötigt die Datei navigation.js, um zu funktionieren
+
+//	In diesem Teil definieren wir das Aussehen der Navigation für einen großen Bildschirm.
+//	Da wir in der Schule immer mit großen Bildschirmen arbeiten, sind große Bildschirme für uns wichtig.
+nav {
+	background-color: $color-2;
+	ul.topnav {
+		list-style-type: none;
+	  width: $page-width;
+	  max-width: $page-max-width;
+	  margin-left: auto;
+	  margin-right: auto;
+		overflow: hidden;
+		li {
+			&:first-child {
+				float: left;
+			}
+			&:not(:first-child) {
+				float: right;
+			}
+			a {
+				display: inline-block;
+				color: $color-1;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				transition: 0.3s;
+				font-size: 17px;
+				&:hover {
+					background-color: darken($color-2, 20);
+				}
+			}
+			&.icon {
+				display: none;
+			}
+		}
+	}
+
+	//	Wenn das Fenster kleiner wird als 45em (circa 720px), dann springt die Navigation um und zeigt einen Button
+	//	durch einen Druck auf diesen Button kann die Navigation ausgefahren werden.
+	@media screen and (max-width: $breakpoint-mittel) {
+		ul.topnav {
+			width: 100%;
+			li {
+				display: none;
+				
+				&.icon {
+					float: right;
+					display: inline-block;
+				}
+			}
+			&.responsive {
+				position: relative;
+				li {
+					&.icon {
+						position: absolute;
+						right: 0;
+						top: 0;
+					}
+					float: none;
+					display: inline;
+					a {
+						display: block;
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}

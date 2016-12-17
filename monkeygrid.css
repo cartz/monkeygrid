@@ -1,8 +1,3 @@
-*,
-*:after,
-*:before {
-  box-sizing: inherit; }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -12,7 +7,8 @@ body {
   font-size: 1.6em;
   font-weight: 300;
   letter-spacing: 0.01em;
-  line-height: 1.6; }
+  line-height: 1.6;
+  margin: 0; }
 
 blockquote {
   border-left: 0.3rem solid;
@@ -183,6 +179,53 @@ ol {
 
 ul {
   list-style: circle inside; }
+
+nav {
+  background-color: #00a8e6; }
+  nav ul.topnav {
+    list-style-type: none;
+    width: 90%;
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; }
+    nav ul.topnav li:first-child {
+      float: left; }
+    nav ul.topnav li:not(:first-child) {
+      float: right; }
+    nav ul.topnav li a {
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      font-size: 17px; }
+      nav ul.topnav li a:hover {
+        background-color: #005d80; }
+    nav ul.topnav li.icon {
+      display: none; }
+  @media screen and (max-width: 45em) {
+    nav ul.topnav {
+      width: 100%; }
+      nav ul.topnav li {
+        display: none; }
+        nav ul.topnav li.icon {
+          float: right;
+          display: inline-block; }
+      nav ul.topnav.responsive {
+        position: relative; }
+        nav ul.topnav.responsive li {
+          float: none;
+          display: inline; }
+          nav ul.topnav.responsive li.icon {
+            position: absolute;
+            right: 0;
+            top: 0; }
+          nav ul.topnav.responsive li a {
+            display: block;
+            text-align: left; } }
 
 b,
 strong {

@@ -1,0 +1,18 @@
+//	Settings
+
+//	In dieser Datei machen wir die Einstellungen für unser Framework. 
+//	Wir definieren alle Variablen, die über das gesamte Framework hinweg gelten sollen.
+
+//	Farben
+$color-1: #fff !default;
+$color-2: #00a8e6 !default;
+$color-3: #8cc14c !default;
+
+//  Grid und Seite
+$page-width: 90%;
+$page-max-width: 100rem;
+$grid-width: 96%;
+$grid-gutter: 4%;
+$breakpoint-klein: 33.75em; // 540px
+$breakpoint-mittel: 45em; // 720px
+$breakpoint-gross: 60em; // 960px

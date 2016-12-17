@@ -1,47 +1,39 @@
 //  Grid
 
-//  An dieser Stelle machen wir die Einstellungen für unser Grid.
-
-$width: 96%;
-$gutter: 4%;
-$breakpoint-klein: 33.75em; // 540px
-$breakpoint-mittel: 45em; // 720px
-$breakpoint-gross: 60em; // 960px
-
 //  An dieser Stelle definieren wir den container.
 //  Wir wollen nämlich nicht, dass die Internetseite 
 //  sich über die gesamte Breite des Fensters erstreckt.
 .container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+	width: $page-width;
+	margin-left: auto;
+	margin-right: auto;
 
-  @media only screen and (min-width: $breakpoint-klein) {
-    width: 90%;
-  }
+	@media only screen and (min-width: $breakpoint-klein) {
+		width: $page-width;
+	}
 
-  @media only screen and (min-width: $breakpoint-gross) {
-    width: 90%;
-    max-width: 100rem;
-  }
+	@media only screen and (min-width: $breakpoint-gross) {
+		width: $page-width;
+		max-width: $page-max-width;
+	}
 }
 
 //  An dieser Stelle definieren wir eine Zeile (row).
 .row {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 .row [class^="col"] {
-  float: left;
-  margin: 0.5rem 2%;
-  min-height: 0.125rem;
+	float: left;
+	margin: 0.5rem 2%;
+	min-height: 0.125rem;
 }
 
 .row::after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 //  An dieser Stelle definieren wir eine Zelle (col).
@@ -56,17 +48,17 @@ $breakpoint-gross: 60em; // 960px
 .col-drittel,
 .col-halb,
 .col-ganz {
-  width: $width;
+	width: $grid-width;
 }
 
 @media only screen and (min-width: $breakpoint-mittel) {
-  .col-viertel { width: ($width / 4) - ($gutter * 9 / 12); }
-  .col-drittel { width: ($width / 3) - ($gutter * 8 / 12); }
-  .col-halb { width: ($width / 2) - ($gutter * 6 / 12); }
-  .col-ganz { width: $width; }
+	.col-viertel { width: ($grid-width / 4) - ($grid-gutter * 9 / 12); }
+	.col-drittel { width: ($grid-width / 3) - ($grid-gutter * 8 / 12); }
+	.col-halb { width: ($grid-width / 2) - ($grid-gutter * 6 / 12); }
+	.col-ganz { width: $grid-width; }
 }
 
-.col-viertel-klein { width: ($width / 4) - ($gutter * 9 / 12); }
-.col-drittel-klein { width: ($width / 3) - ($gutter * 8 / 12); }
-.col-halb-klein { width: ($width / 2) - ($gutter * 6 / 12); }
-.col-ganz-klein { width: $width; }
+.col-viertel-klein { width: ($grid-width / 4) - ($grid-gutter * 9 / 12); }
+.col-drittel-klein { width: ($grid-width / 3) - ($grid-gutter * 8 / 12); }
+.col-halb-klein { width: ($grid-width / 2) - ($grid-gutter * 6 / 12); }
+.col-ganz-klein { width: $grid-width; }

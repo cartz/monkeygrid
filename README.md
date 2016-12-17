@@ -4,7 +4,7 @@ Das Ziel dieses Frameworks ist es, die Techniken, die dahinter stecken auch mein
 Ein weiteres Ziel bei diesem Framework war es, die massive Nutzung unterschiedlicher class-Attribute zu verhindern. Zwar gibt es auch hier Möglichkeiten der Doppelung, es sollte jedoch insgesamt gesehen nicht zu häufig passieren, dass mehr als ein class-Attribut genutzt wird.
 Über Anregungen und Beteiligung an diesem Framework würde ich mich natürlich sehr freuen, denn mein kleines Framework ist noch längst nicht perfekt. Ich suche zum Beispiel noch nach Lösungen für die folgenden Probleme:
 
-1. Navigationsleiste
+1. Navigationsleiste (fixed topbar)
 2. einfache Lightbox/Modals
 
 ##Download
@@ -13,8 +13,13 @@ Die Schulversion der monkeygrids ist unter: https://github.com/cartz/monkeygrid/
 ##Changelog
 Änderungen werde ich versuchen stets möglichst gewissenhaft zu notieren.
 
-###16.12.16
+###16.12.16 - 1.0
 - 1.0 Release
+
+###17.12.16 - 1.01
+- Versionbump to 1.01
+- einfache Navigationsleiste
+- kleinere Veränderungen in den Variablen
 
 
 ##Kontakt

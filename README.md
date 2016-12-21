@@ -21,6 +21,11 @@ Die Schulversion der monkeygrids ist unter: https://github.com/cartz/monkeygrid/
 - einfache Navigationsleiste
 - kleinere Veränderungen in den Variablen
 
+###21.12.16 - 1.02
+- Versionbump to 1.02
+- Container nun auch als Mixin nutzbar container($page-width, $max-page-width)
+- eine SCSS-Datei für eigene Erweiterungen wurde hinzugefügt und eingepflegt
+
 
 ##Kontakt
 - www.mydarktime.de (Blog)

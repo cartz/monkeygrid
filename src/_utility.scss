@@ -27,3 +27,8 @@
 .center {
 	text-align: center;
 }
+
+// Elemente ausblenden, bei kleinem Fenster
+.hide-small {
+	@include hide-small();
+}

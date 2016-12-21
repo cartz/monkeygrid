@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"wid",
+				"width"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
 				"uk-ali",
 				"uk-align-right \tUIkit class"
 			],
@@ -80,26 +88,19 @@
 	"buffers":
 	[
 		{
-			"file": "src/_link.scss",
-			"settings":
-			{
-				"buffer_size": 179,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "demo.html",
 			"settings":
 			{
 				"buffer_size": 4356,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/_navigation.scss",
+			"file": "src/_utility.scss",
 			"settings":
 			{
-				"buffer_size": 1472,
+				"buffer_size": 374,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -142,20 +143,31 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Claus/Script/monkeygrid",
-		"/Users/Claus/Script/monkeygrid/src"
+		"/Users/Claus/Documents/Script/monkeygrid",
+		"/Users/Claus/Documents/Script/monkeygrid/js",
+		"/Users/Claus/Documents/Script/monkeygrid/src"
 	],
 	"file_history":
 	[
-		"/Users/Claus/Script/monkeygrid/src/_grid.scss",
-		"/Users/Claus/Script/monkeygrid/monkeygrid.css",
-		"/Users/Claus/Script/monkeygrid/src/_utility.scss",
-		"/Users/Claus/Script/monkeygrid/src/_base.scss",
-		"/Users/Claus/Script/monkeygrid/src/_blockquote.scss",
-		"/Users/Claus/Script/monkeygrid/src/_typography.scss",
-		"/Users/Claus/Script/monkeygrid/src/_button.scss",
-		"/Users/Claus/Script/monkeygrid/src/_image.scss",
-		"/Users/Claus/Script/monkeygrid/src/_color.scss",
+		"/Users/Claus/Dropbox/monkeygrids - Homepage/monkeygrids-homepage.sublime-workspace",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_grid.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_settings.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/README.md",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_blockquote.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_navigation.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/js/navigation.js",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_lists.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/monkeygrid.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_base.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/license.md",
+		"/Users/Claus/Documents/Script/monkeygrid/licence.md",
+		"/Users/Claus/Documents/Script/monkeygrid/monkeygrid.css",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_typography.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_button.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_colors.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_link.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_utility.scss",
+		"/Users/Claus/Documents/Script/monkeygrid/src/_lists.css",
 		"/Users/Claus/Desktop/monkeygrid/src/monkeygrid.scss",
 		"/Users/Claus/Desktop/milligram-1.2.4/src/milligram.sass",
 		"/Users/Claus/Desktop/milligram-1.2.4/src/_Blockquote.sass",
@@ -221,15 +233,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"abstand",
-			"breite",
-			"Breite",
-			"breite",
 			"gutter",
 			"$width",
-			"sm",
-			"-sm",
-			"sm",
+			"width",
+			";\n",
+			"2",
+			"1",
+			"hidden",
 			"Ù",
 			" data-uk-scrollspy=\"{cls:'uk-animation-slide-right', delay:300}\"",
 			"data-uk-scrollspy=\"{cls:'uk-animation-slide-left', delay:300}\"",
@@ -252,40 +262,11 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/_link.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 179,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8,
-								8
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "demo.html",
 					"semi_transient": false,
 					"settings":
@@ -297,51 +278,48 @@
 						"selection":
 						[
 							[
-								631,
-								631
+								39,
+								39
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1566.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "src/_navigation.scss",
+					"buffer": 1,
+					"file": "src/_utility.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1472,
+						"buffer_size": 374,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								730,
-								730
+								315,
+								315
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 813.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -353,7 +331,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 66.0
 	},
 	"layout":
 	{

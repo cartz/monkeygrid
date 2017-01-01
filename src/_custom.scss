@@ -1,0 +1,164 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0 0 20em;
+}
+
+#intro {
+	@include container(100%, 100%);
+	padding-top: 8em;
+	padding-bottom: 8em;
+	background-color: green;
+	background-size: cover;
+	text-align: center;
+	
+	h1 {
+		font-weight: 500;
+		text-shadow: 0.2rem 0.2rem 3rem $color-1;
+	}
+
+	p {
+		font-size: 3rem;
+		text-shadow: 0.2rem 0.2rem 2rem $color-1;
+	}
+}
+
+#features {
+	@include container();
+}
+
+#functions {
+	@include container();
+
+	.row {
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.card {
+			background-color: lighten($color-3, 40);
+			margin-bottom: 1.5em;
+			padding: 0em;
+			text-align: center;
+			@include spacer(1.5em, 1.5em);
+
+			@media only screen and (min-width: $breakpoint-mittel) {
+				padding: 1.5em;
+			}
+
+			&:hover, :focus {
+				background-color: lighten($color-3, 45);
+			}
+		}
+	}
+}
+
+#download {
+	@include container();
+
+	.row {
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.card {
+			background-color: lighten($color-3, 45);
+			margin-bottom: 1.5em;
+			padding: 0em;
+			text-align: center;
+			@include spacer(1.5em, 1.5em);
+
+			@media only screen and (min-width: $breakpoint-mittel) {
+				padding: 1.5em;
+			}
+
+			&:hover, :focus {
+				background-color: lighten($color-3, 50);
+			}
+		}
+	}	
+}
+
+#documentation {
+	@include container();
+
+	.row {
+		a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		.card {
+			background-color: lighten($color-5, 10);
+			margin-bottom: 1.5em;
+			padding: 0em;
+			text-align: center;
+			@include spacer(1.5em, 1.5em);
+
+			@media only screen and (min-width: $breakpoint-mittel) {
+				padding: 1.5em;
+			}
+
+			&:hover, :focus {
+				background-color: lighten($color-5, 15);
+			}
+		}
+	}	
+}
+
+#documentation-item {
+	@include container();
+
+	.pagination-parent {
+		text-decoration: none;
+		text-align: center;
+		margin-bottom: 6.5em;
+	}
+}
+
+#demo {
+	.container {
+		text-align: center;
+		background-color: lighten($color-2, 90);
+	}
+	.row {
+		background-color: lighten($color-2, 60);
+
+		div {
+			background-color: lighten($color-2, 40);
+		}
+	}
+}
+
+#pagination {
+	@include container();
+
+	.pagination-previous {
+		float: left;
+		text-decoration: none;
+	}
+
+	.pagination-next {
+		float: right;
+		text-decoration: none;
+	}
+}
+
+#footer {
+	@include container(100%, 100%);
+	@include spacer(3em, 0em);
+	height: 10em;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+
+	a {
+		color: #000;
+	}
+}

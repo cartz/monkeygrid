@@ -2,10 +2,8 @@
 
 //	In dieser Datei kümmern wir uns um die grundlegenden Einstellungen der Internetseite. 
 
-*,
-*:after,
-*:before {
-  //box-sizing: inherit;
+*, *:after, *:before {
+  box-sizing: border-box;
 }
 
 //	1.6rem = 16px

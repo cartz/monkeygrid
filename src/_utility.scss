@@ -4,26 +4,43 @@
 
 // Eine Ausrichtung bereinigen mit .clearfix
 .clearfix {
-  &:after {
-    clear: both;
-    content: " ";
-    display: table;
-  }
+	&:after {
+		clear: both;
+		content: " ";
+		display: table;
+	}
 }
 
 // Textausrichtungen festlegen
 .float-left {
-  float: left;
+	float: left;
 }
 
 .float-right {
-  float: right;
+	float: right;
 }
 
 .justify {
-  text-align: justify;
+	text-align: justify;
 }
 
 .center {
 	text-align: center;
+}
+
+.truncate {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+// Elemente ausblenden
+.hidden-small {
+	@include hidden-small();
+}
+
+.hidden-medium {
+	@include hidden-small();
+	@include hidden-medium();
 }

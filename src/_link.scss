@@ -6,8 +6,7 @@ a {
   color: $color-2;
   text-decoration: none;
 
-  &:focus,
-  &:hover {
+  &:focus, &:hover {
     color: darken($color-2, 10);
   }
 }

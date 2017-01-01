@@ -28,6 +28,7 @@
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .truncate {
 	overflow: hidden;
 	white-space: nowrap;
@@ -43,4 +44,9 @@
 .hidden-medium {
 	@include hidden-small();
 	@include hidden-medium();
+=======
+// Elemente ausblenden, bei kleinem Fenster
+.hide-small {
+	@include hide-small();
+>>>>>>> origin/master
 }

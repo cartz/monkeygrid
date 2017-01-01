@@ -18,6 +18,7 @@
 	padding-bottom: $bottom;
 }
 
+<<<<<<< HEAD
 // Mit diesen Mixins können einzelne Elemente einfach versteckt werden, wenn der Bildschirm zu klein ist.
 @mixin hidden-small {
 	@media screen and (max-width: $breakpoint-klein) {
@@ -29,4 +30,11 @@
 	@media screen and (max-width: $breakpoint-mittel) {
 		display: none;
 	}
+=======
+// Mit diesem Mixin können einzelne Elemente einfach versteckt werden, wenn der Bildschirm zu klein ist.
+@mixin hide-small {
+	@media screen and (max-width: $breakpoint-klein) {
+		display: none;
+	}
+>>>>>>> origin/master
 }

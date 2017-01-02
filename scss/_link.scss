@@ -1,0 +1,12 @@
+//	Links
+
+//	In dieser Datei bearbeiten wir das Aussehen von Links.
+
+a {
+  color: $color-2;
+  text-decoration: none;
+
+  &:focus, &:hover {
+    color: darken($color-2, 10);
+  }
+}

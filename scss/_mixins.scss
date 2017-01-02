@@ -1,0 +1,32 @@
+// Mit diesem Mixin kann man einen Container erstellen, der den eigenen Vorstellungen entspricht. Es ist so möglich, zum Beispiel einen Container über die gesamte Seitenbreite zu erstellen. Hierzu muss das Mixin mit @include container(); in den entsprechenden Eintrag eingefügt werden.
+@mixin container($width: $page-width, $max-width: $page-max-width) {
+	width: $width;
+	margin-left: auto;
+	margin-right: auto;
+	@media only screen and (min-width: $breakpoint-klein) {
+		width: $width;
+	}
+	@media only screen and (min-width: $breakpoint-gross) {
+		width: $width;
+		max-width: $max-width;
+	}
+}
+
+// Mit dem Spacer können einzelne Bereiche oder Teile der Seite voneinander getrennt werden.
+@mixin spacer($top: $spacer-top, $bottom: $spacer-bottom) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}
+
+// Mit diesen Mixins können einzelne Elemente einfach versteckt werden, wenn der Bildschirm zu klein ist.
+@mixin hidden-small {
+	@media screen and (max-width: $breakpoint-klein) {
+		display: none;
+	}
+}
+
+@mixin hidden-medium {
+	@media screen and (max-width: $breakpoint-mittel) {
+		display: none;
+	}
+}

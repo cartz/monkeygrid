@@ -1,0 +1,70 @@
+#navbar {
+	background-color: $color-2;
+	overflow: hidden;
+	min-height: 3em;
+
+	a {
+		color: $color-1;
+		text-decoration: none;
+
+		&:hover{
+			color: darken($color-1, 20);
+		}
+	}
+
+	.wrapper {
+		width: $page-width;
+		max-width: $page-max-width;
+		margin-left: auto;
+		margin-right: auto;
+
+		.header {
+			display: inline;
+
+			.logo {
+				font-size: 2em;
+				margin-left: 2%;
+			}
+
+			.handle {
+				float: right;
+				cursor: pointer;
+				display: none;
+				margin-top: 0.8em;
+
+				@media screen and (max-width: $breakpoint-mittel) {
+					display: inline;
+				}
+			}
+		}
+		
+		ul {
+			overflow: hidden;
+			float: right;
+			text-align: center;
+			margin-top: 1em;
+			margin-right: 2%;
+			
+			li {
+				display: inline;
+				padding-left: 1em;
+			}
+
+			@media screen and (max-width: $breakpoint-mittel) {
+				display: none;
+				width: 100%;
+				
+				&.show {
+					display: block;
+				}
+				
+				li {
+					width: 100%;
+					float: none;
+					display: block;
+					padding-top: 1em;
+				}
+			}
+		}
+	}
+}

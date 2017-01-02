@@ -1,0 +1,17 @@
+//	Blockquote
+
+//	In dieser Datei sorgen wir dafür, dass Zitate so dargestellt werden, 
+//	wie wir es uns wünschen.
+
+blockquote {
+  border-left: 0.3rem solid;
+  border-color: $color-3;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+  font-style: oblique;
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}

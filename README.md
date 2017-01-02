@@ -8,7 +8,7 @@ Ein weiteres Ziel bei diesem Framework war es, die massive Nutzung unterschiedli
 2. einfache Lightbox/Modals
 
 ##Download
-Die Schulversion der monkeygrids ist unter: https://github.com/cartz/monkeygrid/blob/master/monkeygrid.css zu finden. Minify etc. sind nicht über diese Version gelaufen, sie ist also sehr gut lesbar. Im Ordner src befinden sich die scss-Dateien, die ich benutze, um das Framework zu organisieren.
+Die Schulversion der monkeygrids ist unter: https://raw.githubusercontent.com/cartz/monkeygrid/master/scss/monkeygrid.css zu finden. Minify etc. sind nicht über diese Version gelaufen, sie ist also sehr gut lesbar. Im Ordner src befinden sich die scss-Dateien, die ich benutze, um das Framework zu organisieren.
 
 ##Changelog
 Änderungen werde ich versuchen stets möglichst gewissenhaft zu notieren.
